@@ -8,13 +8,14 @@
  */
 #include <SoftwareSerial.h>
 
+
 SoftwareSerial mySerial(10,11);   //Inicia o software serial nos pinos 10 e 11
 
 //Pinos
 const int led0 = 3,    led1 = 5,    led2 = 6,    led3 = 9;
 const int ldr0 = A0,   ldr1 = A1,   ldr2 = A2,   ldr3 = A3;
 
-//Variaveis do PID
+//Variaveis do PID servem para tal coisa...
 float kp0 = 0.3,  ki0 = 0.009,  kd0 = 0.006,  i0;
 float kp1 = 0.3,  ki1 = 0.009,  kd1 = 0.006,  i1;
 float kp2 = 0.3,  ki2 = 0.009,  kd2 = 0.006,  i2;
